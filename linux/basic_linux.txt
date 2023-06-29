@@ -1,0 +1,32 @@
+Basic linux commands:
+
+cd : change directory
+This command is used to traverse between the directories
+
+mkdir: make directory
+This command is used to create a new directory
+
+rmdir : remove directory
+This command is used to remove an existing directory
+
+rm : remove
+This command is used to delete each given file
+
+sudo : gives user access of super user or another user
+
+ps aux : lists all processes running on the system
+
+grep : It takes in input the output of previous command executed, and outputs the results with selected string
+
+pwd : present working directory
+It tells user which directory is the user present
+
+ls: Lists the directories and files present in the pwd 
+
+ll: long list
+Returns the long description of ls
+
+-h: human readable
+Used with commands like like ll, free to give user data output in human readable format
+
+free : checks the system usage
