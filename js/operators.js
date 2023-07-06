@@ -26,11 +26,26 @@ console.log( '6' / '2' ); // 3, converts both operands to numbers
 
 // No effect on numbers
 let a = 1;
-alert( +a ); // 1
+console.log( +a ); // 1
 
 let by = -2;
-alert( +b ); // -2
+console.log( +b ); // -2
 
 // Converts non-numbers
-alert( +true ); // 1
-alert( +"" );   // 0
+console.log( +true ); // 1
+console.log( +"" );   // 0
+
+let apples = "2";
+let oranges = "3";
+
+console.log( apples + oranges ); // "23", the binary plus concatenates strings
+
+let ants = "2";
+let cats = "3";
+
+// both values converted to numbers before the binary plus
+console.log( +ants + +cats ); // 5
+
+let p = 2 * 2 + 1;
+
+alert( p ); // 5
