@@ -1,3 +1,4 @@
 # BasicPrograms
-This repository will contain the basic programs of multiple languages.
-This is an open repository, and promotes beginners and professionals sharing their expertise and code with all.
+Basic Program is a repository made for purpose of learning new things, new languages, and mastering the older ones. This repository will contain programs from various languages. It may not be a guide for all, but it is a self learning journey. 
+
+You are most welcome to share this journey with me.
