@@ -1,0 +1,23 @@
+ls: List files and partitions on the current disk. It helps you see available partitions and identify the location of the kernel and initrd files.
+
+set: View or set GRUB environment variables. You can use it to check or modify variables used by GRUB during the boot process.
+
+lsmod: List loaded modules (kernel extensions) available in the current GRUB environment.
+
+insmod: Load a module (kernel extension) into memory. You can use this command to load additional modules required for booting or accessing certain filesystems.
+
+search: Search for a GRUB configuration file or a specific kernel/initrd image.
+
+configfile: Load and run a specific GRUB configuration file. Useful for loading custom configurations or multiple boot scenarios.
+
+linux: Specify the kernel image to boot. This command is used to load the kernel into memory for booting.
+
+initrd or initramfs: Specify the initial RAM disk image to be used during the boot process. It contains essential files and drivers needed to boot the system until the actual root filesystem is mounted.
+
+boot: Initiate the boot process with the selected kernel and initrd. This command is used to start the operating system.
+
+chainloader: Chainload another bootloader (e.g., Windows bootloader). This is used when you have multiple bootloaders installed on your system.
+
+reboot: Reboot the system.
+
+halt or shutdown: Halt or power off the system.

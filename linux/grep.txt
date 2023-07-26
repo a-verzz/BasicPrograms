@@ -1,0 +1,10 @@
+Some useful options for grep include:
+
+-i: Perform a case-insensitive search.
+-v: Invert the match, displaying lines that do not contain the pattern.
+-r or -R: Recursively search files in directories.
+-n: Show line numbers for matching lines.
+-w: Match whole words only.
+-A num: Print num lines of trailing context after a match.
+-B num: Print num lines of leading context before a match.
+-C num: Print num lines of leading and trailing context around a match.
