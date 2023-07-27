@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    #todo-app {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    #todo-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    #todo-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    #todo-list li input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    #add-task {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="todo-app">
+    <h2>To-Do List</h2>
+    <ul id="todo-list"></ul>
+    <input type="text" id="new-task" placeholder="Enter a new task">
+    <button onclick="addTask()" id="add-task">Add Task</button>
+  </div>
+
+  <script>
+    const todoList = document.getElementById("todo-list");
+    const newTaskInput = document.getElementById("new-task");
+
+    function addTask() {
+      const taskText = newTaskInput.value.trim();
+
+      if (taskText === "") {
+        alert("Please enter a task!");
+        return;
+      }
+
+      const li = document.createElement("li");
+      li.innerHTML = `
+        <input type="checkbox" onchange="toggleTask(this)">
+        <span>${taskText}</span>
+        <button onclick="removeTask(this)">Remove</button>
+      `;
+
+      todoList.appendChild(li);
+      newTaskInput.value = "";
+    }
+
+    function toggleTask(checkbox) {
+      const taskText = checkbox.nextElementSibling;
+      taskText.style.textDecoration = checkbox.checked ? "line-through" : "none";
+    }
+
+    function removeTask(button) {
+      const li = button.parentElement;
+      todoList.removeChild(li);
+    }
+  </script>
+</body>
+</html>
