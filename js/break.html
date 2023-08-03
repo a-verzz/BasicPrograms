@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            break statement
+        </title>
+    </head>
+    <body>
+        <h2>break statement</h2>
+        <h3>Sum is <hi id="sum"></div></hi>
+        <script>
+            let sum = 0;
+
+            while (true) {
+
+            let value = +prompt("Enter a number", '');
+
+            if (!value) break; // (*)
+
+            sum += value;
+            document.getElementById('sum').innerHTML=sum;
+            }
+            alert( 'Sum: ' + sum );
+        </script>
+        
+    </body>
+</html>
